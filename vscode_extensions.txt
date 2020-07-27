@@ -1,0 +1,11 @@
+batisteo.vscode-django
+formulahendry.auto-rename-tag
+jitdev.copy-django-model-fields
+ms-ossdata.vscode-postgresql
+ms-python.anaconda-extension-pack
+ms-python.python
+PKief.material-icon-theme
+redhat.vscode-yaml
+thebarkman.vscode-djaneiro
+VisualStudioExptTeam.vscodeintellicode
+wholroyd.jinja

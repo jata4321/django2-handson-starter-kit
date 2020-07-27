@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 CDN (Optionall unless you are using Crispy Forms) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome 4.7 CDN (Optional unless you are using Crispy Forms) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Site-wide style sheet (Optional, but...) -->
+    <link rel="stylesheet" href="{% static 'allpages/css/stylesheet.css' %}">
+    <!-- Favicon Link (Optional) -->
+    <link rel="shortcut icon" href="{% static 'allpages/images/favicon.png'%}" type="image/x-icon">
+    <!-- Fill in this block if you need some specific css or js script -->
+    {% block headcontent %}
+    {% endblock headcontent %}
+
+    <title>
+        {% if title %}
+            {{title}}
+        {% else %}
+            Welcome to mypage!
+        {% endif %}
+    </title>
+</head>
+
+<body>
+    <header>
+        <img src=" {% static 'allpages/images/logo.png' %} " alt="Tu nasze logo?">
+    </header>
+    <nav>
+        <a href="{% url 'allpages-home'%}">Home</a>
+        <a href="{% url 'allpages-about'%}">About</a>
+        <a href="{% url 'allpages-privacy'%}">Privacy</a>
+        <a href="{% url 'admin:index'%}">Admin</a>
+    </nav>
+    <main>
+
+        <article>
+            {% block maincontent %}
+            {% endblock maincontent %}
+        </article>
+
+    </main>
+    <footer>
+        <a href="http://twitter.com/jata4321" class="fa fa-twitter" title="Twitter"> Twitter</a>
+    </footer>
+</body>
+
+</html>

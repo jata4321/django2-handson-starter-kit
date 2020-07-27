@@ -1,0 +1,18 @@
+{
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.jediEnabled": false,
+    "python.pythonPath": "C:\\Users\\jakub\\envs\\filmy_env\\Scripts\\python.exe",
+    "editor.fontFamily": "Fira Code Retina, Cascadia Code,  monospace",
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "prettier.proseWrap": "never",
+    "python.languageServer": "Microsoft",
+    "window.zoomLevel": 0.3,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "editor.wordWrap": "on",
+    "breadcrumbs.enabled": true
+  }
